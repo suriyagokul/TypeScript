@@ -1,0 +1,53 @@
+TypeScript: For Type Checking
+
+            Built On Top Of Javascript which is development tool for making our application type safety.
+
+            For Example: let a = 10
+
+                         And then later someone re initialized a to some string value like below
+
+                         a = "suriya"  which is acceptable in Javascript
+
+                         But this is a problem of types. a can be of type only numbers but we are passing string.
+
+                How to Solve?
+
+                        let a:number = 10
+
+                        a = "suriya" gives error in TypeScript i.e Type 'number' is not assignable to type 'string'..
+
+                        a accepts only numbers
+
+Transpile TypeScript Code to Javascript ==> tsc filename.ts   -->  creates Javascript file with same name
+
+Primitive/Simple Types 
+
+    string
+    boolean
+    number
+
+Special Types
+
+    TypeScript has special types that may not refer to any specific type of data.
+
+    any, unknown, never, undefined and null
+
+Type Assignment
+
+    When creating a variable, there are two main ways TypeScript assigns a type:
+
+        Explicit
+        Implicit
+
+Explicit - writing out the type
+Implicit - TypeScript will "guess" the type, based on the assigned value:
+
+
+
+Type Inference
+
+    TypeScript checks/infers the type of  a variable based on a few simple rules.
+
+    We need not required to pass type like a:number = 10, b:string  = "suriya"
+ 
+    By default TypeScript knows a is number, b is string
