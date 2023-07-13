@@ -51,3 +51,30 @@ Type Inference
     We need not required to pass type like a:number = 10, b:string  = "suriya"
  
     By default TypeScript knows a is number, b is string
+
+
+
+
+TypeScript Project SetUp
+
+    tsc --init 
+
+    npm init -y
+
+    touch index.html
+
+    mkdir src dist
+
+    cd src
+
+    touch index.ts
+
+    cd dist
+
+    touch index.js
+
+    write typescript code in ts file
+
+    goto typescript config.json file, look for output dir and add ./dist folder to it.  
+
+    In terminal type tsc -w  (-w = watch) which creates .js files in dist folder
